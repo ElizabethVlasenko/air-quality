@@ -1,0 +1,45 @@
+.quality {
+    margin: 50px 0;
+
+    &-title {
+        font-weight: normal;
+        font-size: 35px;
+        line-height: 41px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+    &-subtitle {
+        font-weight: normal;
+        font-size: 23px;
+        line-height: 27px;
+        color: #FFFFFF;
+    }
+
+    &-map {
+        margin: 42px 0;
+        height: 560px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .quality {
+        margin: 25px 0;
+
+        &-title {
+            font-size: 27px;
+            line-height: 32px;
+        }
+    
+        &-subtitle {
+            font-size: 17px;
+            line-height: 20px;
+        }
+    
+        &-map {
+            margin: 26px 0;
+            height: 656px;
+        }
+    }
+  }
+

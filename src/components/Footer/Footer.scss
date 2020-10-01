@@ -1,0 +1,112 @@
+.footer {
+    margin-top: 50px;
+    border-top: 1px solid #fff;
+
+    &-partners {
+        display: flex;
+        align-items: center;
+
+        &-item {
+            margin-left: 120px;
+
+            &:first-child {
+                margin-left: 0;
+            }
+        }
+    }
+
+    &-text-wrap {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 80px;
+    }
+
+    &-navigation {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        &-item {
+            margin-bottom: 20px;
+            text-decoration: none;
+            font-weight: normal;
+            font-size: 19px;
+            line-height: 22px;
+            color: #fff;
+        }
+
+        &-text {
+            margin-top: 112px;
+            width: 366px;
+            font-weight: normal;
+            font-size: 17px;
+            line-height: 20px;
+            color: #fff;
+
+            &> span {
+                color: #dfd955;
+            }
+        }
+       
+    }
+
+    &-text {
+        margin-bottom: 14px;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 14px;
+        color: #fff;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    .footer {
+        margin-top: 25px;
+
+        &-partners {
+            justify-content: space-between;
+            margin-bottom: 50px;
+
+            &-item {
+                margin: 0;
+                width: 20%;
+
+                &:nth-child(2) {
+                    width: 12%;
+                }
+            }
+        }
+
+        &-text-wrap {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &-navigation {
+
+            &-item {
+            text-align: center;
+            font-size: 15px;
+            line-height: 18px;
+            }
+
+            &-text {
+                width: 370px;
+                text-align: center;
+                font-size: 15px;
+                line-height: 18px;
+    
+                }
+        }
+
+        &-text {
+            text-align: center;
+            font-size: 10px;
+            line-height: 10px;
+        }
+    }
+    
+  }
