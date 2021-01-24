@@ -12,7 +12,7 @@ const HeroBlock = ({bgImg, title, links, logos}) =>{
     
     
     return (
-        <section className="hero">
+        <section className="hero" id="hero">
             <div className="container">
                 <div className="hero-partners">
                     {logosImages}
@@ -25,7 +25,7 @@ const HeroBlock = ({bgImg, title, links, logos}) =>{
                     {navItems}
                 </div>
                 <h1 className="hero-title">{title}</h1>
-                <a href="#" className="hero-link">Отследить</a>
+                <a href="#quality" className="hero-link">Отследить</a>
                 
                 <div className={`hero-menu ${
                 isMenuOpen 

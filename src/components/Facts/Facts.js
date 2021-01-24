@@ -15,7 +15,7 @@ const Facts = ({title, slides}) =>{
         </SwiperSlide>)
 
     return (
-        <section className="facts container">
+        <section className="facts container" id="facts">
             <h2 className="facts-title">{title}</h2>
             <div className="swiper-button-prev"/>
             <Swiper
@@ -46,7 +46,6 @@ const Facts = ({title, slides}) =>{
                     centeredSlides: true
                 },
                 1300: {
-                    slidesPerGroup: 3,
                     spaceBetween: 10, 
                     slidesPerView: 3,
                     centeredSlides: true

@@ -19,12 +19,14 @@
         display: flex;
         justify-content: space-between;
         margin-bottom: 80px;
+        margin-top: 112px;
     }
 
     &-navigation {
         display: flex;
         flex-direction: column;
         justify-content: center;
+
 
         &-item {
             margin-bottom: 20px;
@@ -36,7 +38,7 @@
         }
 
         &-text {
-            margin-top: 112px;
+
             width: 366px;
             font-weight: normal;
             font-size: 17px;
@@ -80,12 +82,14 @@
         }
 
         &-text-wrap {
+            margin-top: 0;
             flex-direction: column;
             justify-content: center;
             align-items: center;
         }
 
         &-navigation {
+
 
             &-item {
             text-align: center;
@@ -94,6 +98,7 @@
             }
 
             &-text {
+                margin-top: 112px;
                 width: 370px;
                 text-align: center;
                 font-size: 15px;

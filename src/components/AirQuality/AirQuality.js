@@ -25,7 +25,7 @@ const AirQuality = ({title, subtitle}) =>{
 	}, [])
     
     return (
-        <section className="quality">
+        <section className="quality" id="quality">
             <div className="container">
                 <h2 className="quality-title">{title}</h2>
                 <div className="quality-map" ref={mapContainer}/>
