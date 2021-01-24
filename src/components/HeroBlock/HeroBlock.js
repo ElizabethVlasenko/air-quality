@@ -5,9 +5,9 @@ import useScreenSize from '../../utils/useScreenSize.js';
 const HeroBlock = ({bgImg, title, links, logos}) =>{
     const [isMenuOpen, setMenuOpen] = useState(false);
     const logosImages = logos.map((logoItem, i) => <img src={logoItem} alt="partner-logo" className="hero-partners-item" key={i}/>);
-    const navItems = links.map((link) => <a href={link.href} key={link.id} className="hero-navigation-item">{link.title}</a>);
+    const navItems = links.map((link) => <a onClick={()=> {setMenuOpen(false)}} href={link.href} key={link.id} className="hero-navigation-item">{link.title}</a>);
     const toggleMenu = () => {
-	    setMenuOpen(!isMenuOpen)
+        setMenuOpen(!isMenuOpen);       
     }
     
     
@@ -16,7 +16,7 @@ const HeroBlock = ({bgImg, title, links, logos}) =>{
             <div className="container">
                 <div className="hero-partners">
                     {logosImages}
-                    {(useScreenSize() < 768)
+                    {(useScreenSize() < 1024)
                     ? <img onClick={toggleMenu} className="hero-menu-burger" src={require("../../assets/menu.png")}/>
                     : null
                 }
@@ -36,9 +36,11 @@ const HeroBlock = ({bgImg, title, links, logos}) =>{
                     <div className="hero-menu-navigation">
                     {navItems}
                     </div>
-                    <p className="hero-menu-text">2020, Все права защищены</p>
-                    <p className="hero-menu-text">Согласие на обработку персональных данных <br/>
-                    Политика конфиденциальности</p>
+                    <div className="hero-menu-container">
+                        <p className="hero-menu-text">2020, Все права защищены</p>
+                        <p className="hero-menu-text">Согласие на обработку персональных данных <br/>
+                        Политика конфиденциальности</p>
+                    </div>  
                 </div>
             </div>
         </section>

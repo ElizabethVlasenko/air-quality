@@ -72,11 +72,13 @@
 
     .hero {
         position: relative;
+        box-sizing: border-box;
+        height: 1087px;
 
 
         &-title {
             width: 374px;
-            font-size: 30px;
+            font-size: 40px;
             margin-bottom: 421px;
             margin-top: 231px;
         }
@@ -110,13 +112,17 @@
             position: absolute;
             top: 0;
             left: 0;
-            display: block;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
             width: 100%;
-            height: auto;
+            height: 1010px;
             padding: 38px 0 38px ;
             background-color: #737373;
             z-index: 1;
             opacity: 0;
+            border-bottom: 1px solid #fff;
 
             &-show {
                 opacity: 1;
@@ -131,39 +137,45 @@
 
             &-burger {
                 display: block;
+                position: absolute;
+                top: 66px;
+                right: 66px;
                 z-index: 2;
                 margin: 0 20px 0 18vw;
             }
 
             &-cross {
-                margin-top:35px;
-                margin-left: 12vw;
+                position: absolute;
+                top: 66px;
+                left: 66px;
             }
 
             &-navigation {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                justify-content: center;
+                justify-content: space-between;
                 width: 340px;
+                height: 300px;
                 margin: 0 auto;
                 padding: 185px 0 279px;
 
                 & > .hero-navigation-item {
                     text-align: center;
                     margin: 40px 0 0 0;
+                    font-size: 25px;
+                    line-height: 25px;
                 }
             }
 
             &-text {
-                margin-bottom: 14px;
                 font-style: normal;
                 font-weight: 300;
                 font-size: 15px;
                 line-height: 15px;
                 color: #fff;
                 text-align: center;
-                margin-bottom: 30px;
+                margin-bottom: 20px;
             }
 
         }
