@@ -114,4 +114,12 @@
         }
     }
     
-  }
+}
+@media (max-width: 768px) {
+    .footer {
+        &-navigation-text {
+            width: 100%;
+        }
+    }
+
+}

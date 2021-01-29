@@ -162,3 +162,17 @@
         }
     }
 }
+
+@media (max-width: 414px) {
+
+    .sectors {
+        & .sectors-list-item-name {
+            height: auto;
+            text-align: center;
+        }
+        
+        &-list-item {
+            max-width: 98%;
+        }
+    }
+}

@@ -17,7 +17,7 @@ const HeroBlock = ({bgImg, title, links, logos}) =>{
                 <div className="hero-partners">
                     {logosImages}
                     {(useScreenSize() < 1024)
-                    ? <img onClick={toggleMenu} className="hero-menu-burger" src={require("../../assets/menu.png")}/>
+                    ? <img onClick={toggleMenu} className="hero-menu-burger" alt="menu_burger" src={require("../../assets/menu.png")}/>
                     : null
                 }
                 </div>
@@ -32,7 +32,7 @@ const HeroBlock = ({bgImg, title, links, logos}) =>{
                 ? "hero-menu-show"
                 : ""
                 }`} style={{width: useScreenSize()+"px"}}>
-                        <img onClick={()=> {setMenuOpen(false)}} className="hero-menu-cross" src={require("../../assets/cross.png")}/>
+                        <img onClick={()=> {setMenuOpen(false)}} className="hero-menu-cross" alt="close_menu" src={require("../../assets/cross.png")}/>
                     <div className="hero-menu-navigation">
                     {navItems}
                     </div>

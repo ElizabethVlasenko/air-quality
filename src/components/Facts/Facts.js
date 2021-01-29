@@ -32,23 +32,23 @@ const Facts = ({title, slides}) =>{
             }}
             spaceBetween={10}
             slidesPerView={3}
-            slidesPerGroup={3}
+
             centeredSlides={true}
             breakpoints={{
-                414: {
-                    slidesPerGroup: 1,
-                    spaceBetween: 0, 
+                100: {
+                    spaceBetween: 10, 
+                    slidesPerView: 1,
+                    centeredSlides: true,
                 },
                 768: {
-                    slidesPerGroup: 1,
-                    spaceBetween: 10, 
+                    spaceBetween: 20, 
                     slidesPerView: 2,
                     centeredSlides: true
                 },
-                1300: {
+                1024: {
                     spaceBetween: 10, 
                     slidesPerView: 3,
-                    centeredSlides: true
+                    centeredSlides: true,
                 }
 
             }}
